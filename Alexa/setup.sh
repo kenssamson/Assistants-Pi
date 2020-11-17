@@ -18,7 +18,7 @@
 set -o errexit  # Exit the script if any statement fails.
 set -o nounset  # Exit the script if any uninitialized variable is used.
 
-CLONE_URL="https://github.com/shivasiddharth/avs-device-sdk"
+CLONE_URL="https://github.com/alexa/avs-device-sdk"
 
 PORT_AUDIO_FILE="pa_stable_v190600_20161030.tgz"
 PORT_AUDIO_DOWNLOAD_URL="http://www.portaudio.com/archives/$PORT_AUDIO_FILE"
@@ -258,11 +258,11 @@ then
       "${CMAKE_PLATFORM_SPECIFIC[@]}"
 
   cd $BUILD_PATH
-  make SampleApp -j2
+  make install
 
 else
   cd $BUILD_PATH
-  make SampleApp -j2
+  make install
 fi
 
 echo
