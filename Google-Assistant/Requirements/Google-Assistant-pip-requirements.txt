@@ -7,7 +7,7 @@ pyyaml==5.4
 spidev>=3.2
 gpiozero>=1.4.1
 numpy>=1.15.4
-pycryptodomex==3.7.2
+pycryptodomex==3.19.1
 cryptography==3.3.2
 mock==3.0.5
 oauth2client
